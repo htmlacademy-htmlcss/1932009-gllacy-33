@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ассортимент от «Глейси»</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="visually-hidden">Каталог магазина мороженого «Глейси»</h1>
+    <a class="market-logo">
+      <img src="index.html" alt="Логотип магазина мороженого «Глейси»">
+    </a>
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a href="#" class="navigation-link navigation-link-current">
+            Каталог
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a href="#" class="navigation-link">
+            Доставка и оплата
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a href="#" class="navigation-link">
+            О компании
+          </a>
+        </li>
+      </ul>
+      <ul class="navigation navigation-user">
+        <li class="navigation-item">
+          <a href="tel:+78005558628" class="user-support">
+            +7 800 555-86-28
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a href="#" class="navigation-button">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a href="#" class="navigation-button">
+            Вход
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a href="#" class="navigation-button">
+            Корзина
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="catalog-main">
+    <header class="catalog-header">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="#">
+            Каталог
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link breadcrumbs-link-current">
+            Сливочное
+          </a>
+        </li>
+      </ul>
+      <h2 class="icecream-type-title">Сливочное мороженое</h2>
+    </header>
+    <section class="catalog-products">
+      <h3 class="visually-hidden">Виды сливочного мороженого с фильтрами</h3>
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <select class="select-control" aria-label="Сортировка:">
+          <option value="popular">по популярности</option>
+          <option value="cheap">по возрастанию цены</option>
+          <option value="expensive">по убыванию цены</option>
+        </select>
+
+        <!--Выбор диапазона цены-->
+
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Жирность:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">0%
+                <input type="radio" name="product-fat" value="zero-persent" class="control-input">
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">до 10%
+                <input type="radio" name="product-fat" value="ten-persent" class="control-input" checked>
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">до 30%
+                <input type="radio" name="product-fat" value="thirty-persent" class="control-input">
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">выше 30%
+                <input type="radio" name="product-fat" value="highty-persent" class="control-input">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Наполнители:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">шоколадные
+                <input type="checkbox" name="chocolade-filler" class="control-input" checked>
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">сахарные посыпки
+                <input type="checkbox" name="sugar-filler" class="control-input" checked>
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">фрукты
+                <input type="checkbox" name="fruit-filler" class="control-input">
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">сиропы
+                <input type="checkbox" name="syrup-filler" class="control-input">
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">джемы
+                <input type="checkbox" name="jam-filler" class="control-input">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="button button-apply">Применить</button>
+      </form>
+      <ul class="products-list">
+        <li class="products-item">
+          <img src="#" alt="Малиновое мороженое" class="products-pic">
+          <h4>Малинка</h4>
+          <p class="products-description">
+            Сливочное мороженое с малиновым джемом
+          </p>
+          <b class="products-price">310 ₽/кг</b>
+          <a href="#" class="products-button"><span class="visually-hidden">Купить</span></a>
+        </li>
+        <li class="products-item">
+          <img src="#" alt="Фисташковое мороженое" class="products-pic">
+          <h4>Фисташка</h4>
+          <p class="products-description">
+            Фисташковый пломбир с кусочками шоколада
+          </p>
+          <b class="products-price">340 ₽/кг</b>
+          <a href="#" class="products-button"><span class="visually-hidden">Купить</span></a>
+        </li>
+        <li class="products-item">
+          <img src="#" alt="Черничное мороженое" class="products-pic">
+          <h4>Черника</h4>
+          <p class="products-description">
+            Крем-брюле с черничным джемом
+          </p>
+          <b class="products-price">330 ₽/кг</b>
+          <a href="#" class="products-button"><span class="visually-hidden">Купить</span></a>
+        </li>
+        <li class="products-item">
+          <img src="#" alt="Бабл-гам мороженое" class="products-pic">
+          <h4>Бабл-гам</h4>
+          <p class="products-description">
+            Ванильный пломбир со сладкой посыпкой
+          </p>
+          <b class="products-price">320 ₽/кг</b>
+          <a href="#" class="products-button"><span class="visually-hidden">Купить</span></a>
+        </li>
+        <li class="products-item">
+          <img src="#" alt="Ежевичное мороженое" class="products-pic">
+          <h4>Ежевика</h4>
+          <p class="products-description">
+            Сливочное мороженое с ежевичным джемом
+          </p>
+          <b class="products-price">330 ₽/кг</b>
+          <a href="#" class="products-button"><span class="visually-hidden">Купить</span></a>
+        </li>
+        <li class="products-item">
+          <img src="#" alt="Банановое мороженое" class="products-pic">
+          <h4>Банан</h4>
+          <p class="products-description">
+            Сливочный пломбир с банановым вкусом
+          </p>
+          <b class="products-price">340 ₽/кг</b>
+          <a href="#" class="products-button"><span class="visually-hidden">Купить</span></a>
+        </li>
+        <li class="products-item">
+          <img src="#" alt="Шоколадное мороженое" class="products-pic">
+          <h4>Шоколадка</h4>
+          <p class="products-description">
+            Классический шоколадный пломбир
+          </p>
+          <b class="products-price">270 ₽/кг</b>
+          <a href="#" class="products-button"><span class="visually-hidden">Купить</span></a>
+        </li>
+        <li class="products-item">
+          <img src="#" alt="Клубничное мороженое" class="products-pic">
+          <h4>Клубничка</h4>
+          <p class="products-description">
+            Сливочный пломбир с клубничным вкусом
+          </p>
+          <b class="products-price">300 ₽/кг</b>
+          <a href="#" class="products-button"><span class="visually-hidden">Купить</span></a>
+        </li>
+        <li class="products-item">
+          <img src="#" alt="Лимонное мороженое" class="products-pic">
+          <h4>Лимон</h4>
+          <p class="products-description">
+            Освежающий лимонный сорбет
+          </p>
+          <b class="products-price">310 ₽/кг</b>
+          <a href="#" class="products-button"><span class="visually-hidden">Купить</span></a>
+        </li>
+        <li class="products-item">
+          <img src="#" alt="Ментоловое мороженое" class="products-pic">
+          <h4>Ментол</h4>
+          <p class="products-description">
+            Сливочный пломбир с ментоловым сиропом
+          </p>
+          <b class="products-price">320 ₽/кг</b>
+          <a href="#" class="products-button"><span class="visually-hidden">Купить</span></a>
+        </li>
+        <li class="products-item">
+          <img src="#" alt="Ореховое мороженое" class="products-pic">
+          <h4>Орешек</h4>
+          <p class="products-description">
+            Фисташковый пломбир с шоколадным сиропом
+          </p>
+          <b class="products-price">360 ₽/кг</b>
+          <a href="#" class="products-button"><span class="visually-hidden">Купить</span></a>
+        </li>
+        <li class="products-item">
+          <img src="#" alt="Крем-брюле мороженое" class="products-pic">
+          <h4>Крем-брюле</h4>
+          <p class="products-description">
+            Классическое крем-брюле
+          </p>
+          <b class="products-price">280 ₽/кг</b>
+          <a href="#" class="products-button"><span class="visually-hidden">Купить</span></a>
+        </li>
+      </ul>
+      <button class="button pagination-show-more" type="button">Показать еще</button>
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-prev pagination-disabled">
+            <span class="visually-hidden">Предыдущая страница</span>
+          </a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">5</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-next" href="#">
+            <span class="visually-hidden">Следующая страница</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <ul class="social-list">
+      <li class="social-item">
+        <a href="https://vk.com/htmlacademy" class="social-link">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="social-item">
+        <a href="https://www.facebook.com/htmlacademy" class="social-link">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="social-item">
+        <a href="https://www.instagram.com/htmlacademy/" class="social-link">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="information">
+      <li class="information-item lovely">
+        <a href="#">
+          Для поставщиков
+        </a>
+      </li>
+      <li class="information-item">
+        <a href="#">
+          О производстве
+        </a>
+      </li>
+      <li class="information-item">
+        <a href="#">
+          Наши документы
+        </a>
+      </li>
+      <li class="information-item">
+        <a href="#">
+          Экологические стандарты
+        </a>
+      </li>
+    </ul>
+    <div class="academy">
+      <a class="academy-logo" href="https://htmlacademy.ru">
+        <img src="#" alt="Логотип htmlacademy">
+      </a>
+      <p class="academy-text">
+        Сделано в <a href="https://htmlacademy.ru/" class="academy-link">
+          .html academy
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
