@@ -1,0 +1,305 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+li {
+  list-style-type: none;
+}
+
+.arrow {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  box-sizing: border-box;
+  border-radius: 26px;
+
+}
+
+.slider-pagination-button {
+  background-color: #FEAFC3;
+
+
+}
+.pagination-button-current {
+  background-color: #FEAFC3;
+}
+
+/*скрыт для дизайна, но содержимое доступно*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+}
+
+/*--Шапка--*/
+.page-header {
+  color: #2D3440;
+  background-color: #FEAFC3;
+
+}
+
+.navigation-link {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #2D3440;
+  background-color: #FEAFC3;
+  text-decoration: none;
+}
+
+.support-phone {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+.navigation-button {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #2D3440;
+  background-color: #FFCBD8;
+}
+
+/*--Рекламный блок--*/
+.examples {
+
+}
+.examples-left-container {
+  background-color: #FEAFC3;
+  color: #2D3440;
+}
+.examples-title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.examples-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button-white {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #2D3440;
+  background-color: #FCFCFC;
+}
+
+.examples-slider-image-current {
+  background-image: url("pictures/around-circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FEAFC3;
+  /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+  width: 348px;
+  height: 554px;
+
+}
+
+.examples-slider-item-current {
+  width: 348px;
+  height: 554px;
+}
+
+.examples-slider-image {
+
+}
+
+.examples-slider-item {
+  width: 100px;
+  height: 150px;
+}
+.small-item-container {
+  background-image: url("pictures/small-circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: center;
+  background-color: #FEAFC3;
+  width: 100px;
+  height: 150px;
+}
+
+
+
+.examples-footer {
+
+}
+
+
+
+/*Специальные акции и предложения*/
+.presents-title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.presents-item-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.presents-item {
+  background-color: #FF7799;
+}
+
+
+/*Популярные товары*/
+.products-title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.products-item-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.products-price {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.products-item {
+  background-color: #FCFCFC;
+}
+
+/*--Преимущества--*/
+.advantages {
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+.container-advantages {
+  background-color: #FCFCFC;
+  color: #2D3440;
+}
+.advantages-title {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.advantages {
+  background-color: #FCFCFC;
+}
+
+/*Статья в блоге*/
+.blog-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.blog-link {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #2D3440;
+}
+
+.blog {
+  background-color: #FCFCFC;
+}
+
+/*--Оформление подписки--*/
+.button-red {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FCFCFC;
+  background-color: #2D3440;
+}
+
+.subscribe {
+  background-color: #FCFCFC;
+}
+
+/*--Оформление доставки--*/
+.delivery {
+  background-color: #e6e6e6;
+}
+
+.delivery-form {
+  background-color: #FCFCFC;
+}
+
+.delivery-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.delivery-label {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+/*--Контакты магазина--*/
+.contacts {
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+.contacts-window {
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
