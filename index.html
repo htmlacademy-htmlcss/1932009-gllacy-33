@@ -80,35 +80,43 @@
         </p>
         <a href="#" class="button-white">Заказать</a>
       </div>
-      <ul class="examples-slider-list">
-        <li class="examples-slider-item">
-          <img src="pictures/blewberry-big.png" width="306" height="507" alt="Пломбир с клубничным джемом"
-            class="examples-slider-image examples-slider-image-current">
-        </li>
-        <li class="examples-slider-item">
-          <img src="pictures/banana-small.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана"
-            class="examples-slider-image">
-        </li>
-        <li class="examples-slider-item">
-          <img src="pictures/caramel-small.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу"
-            class="examples-slider-image">
-        </li>
-      </ul>
-
-      <a class="slider-button slider-prev">
+      <div class="images-with-buttons">
+        <!--Список картинок и кнопки переключения -->
+        <ul class="examples-slider-list">
+          <li class="examples-slider-item-current">
+            <div class="big-item-container">
+              <img src="pictures/blewberry-big.png" width="348" height="554" alt="Пломбир с клубничным джемом"
+                class="examples-slider-image-current">
+            </div>
+          </li>
+          <li class="examples-slider-item">
+            <div class="small-item-container">
+              <img src="pictures/banana-small.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана"
+                class="examples-slider-image">
+            </div>
+          </li>
+          <li class="examples-slider-item">
+            <div class="small-item-container">
+              <img src="pictures/caramel-small.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу"
+                class="examples-slider-image">
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a class="slider-prev">
         <img src="pictures/arrow-left.svg" class="arrow" alt="стрелка влево">
         <span class="visually-hidden">Предыдущее фото</span>
       </a>
-      <a class="slider-button slider-next">
+      <a class="slider-next">
         <img src="pictures/arrow-right.svg" class="arrow" alt="стрелка вправо">
         <span class="visually-hidden">Следующее фото</span>
       </a>
-
+      </div>
       <footer class="examples-footer">
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
-            <a class="slider-pagination-button pagination-button-current">
-            <img src="pictures/pagination-white-circle.png" alt="первый слайд">
+            <a class="pagination-button-current">
+              <img src="pictures/pagination-white-circle.png" alt="первый слайд">
               <span class="visually-hidden">первый слайд</span>
             </a>
           </li>
@@ -129,16 +137,19 @@
         <ul class="social-list">
           <li class="social-item">
             <a href="https://vk.com/htmlacademy" class="social-link">
+              <img src="pictures/vk-socials.svg" alt="ссылка вконтакте">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-item">
             <a href="https://www.facebook.com/htmlacademy" class="social-link">
+              <img src="pictures/facebook-socials.svg" alt="ссылка на фэйсбук">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="social-item">
             <a href="https://www.instagram.com/htmlacademy/" class="social-link">
+              <img src="pictures/instagram-socials.svg" alt="ссылка инстаграм">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>

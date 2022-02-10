@@ -46,19 +46,15 @@ li {
 }
 
 .slider-pagination-button {
-  background: rgba(252, 252, 252, 0.3);
-  opacity: 0.3;
-  width: 18px;
-  height: 18px;
-  border: 1px solid rgba(252, 252, 252, 0.3);
-  border-radius: 26px;
-  box-sizing: border-box;
+  background-color: #FEAFC3;
+
+
 }
 .pagination-button-current {
-  background-color: #FCFCFC;;
+  background-color: #FEAFC3;
 }
 
-/*скрыты для дизайна, но содержимое доступно*/
+/*скрыт для дизайна, но содержимое доступно*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -70,12 +66,14 @@ li {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
 }
 
 /*--Шапка--*/
 .page-header {
   color: #2D3440;
-  background-color: #FEAFC3
+  background-color: #FEAFC3;
+
 }
 
 .navigation-link {
@@ -108,6 +106,9 @@ li {
 }
 
 /*--Рекламный блок--*/
+.examples {
+
+}
 .examples-left-container {
   background-color: #FEAFC3;
   color: #2D3440;
@@ -134,8 +135,46 @@ li {
 }
 
 .examples-slider-image-current {
-  background-image: url("pictures/around-circle-small.png");
+  background-image: url("pictures/around-circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FEAFC3;
+  /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+  width: 348px;
+  height: 554px;
+
 }
+
+.examples-slider-item-current {
+  width: 348px;
+  height: 554px;
+}
+
+.examples-slider-image {
+
+}
+
+.examples-slider-item {
+  width: 100px;
+  height: 150px;
+}
+.small-item-container {
+  background-image: url("pictures/small-circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: center;
+  background-color: #FEAFC3;
+  width: 100px;
+  height: 150px;
+}
+
+
+
+.examples-footer {
+
+}
+
+
 
 /*Специальные акции и предложения*/
 .presents-title {
