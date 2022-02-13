@@ -1,3 +1,4 @@
+/*подключение шрифтов*/
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -22,8 +23,7 @@
   font-display: swap;
 }
 
-
-
+/*------------------------body-------------------------*/
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -32,7 +32,9 @@ body {
   color: #2D3440;
   background-color: #FEAFC3;
 }
+/*-----------------------------------------------------*/
 
+/*безклассовые теги index.html*/
 li {
   list-style-type: none;
 }
@@ -45,16 +47,19 @@ li {
 
 }
 
+.slider-prev {
+
+}
+
 .slider-pagination-button {
   background-color: #FEAFC3;
-
 
 }
 .pagination-button-current {
   background-color: #FEAFC3;
 }
 
-/*скрыт для дизайна, но содержимое доступно*/
+/*скрыто для дизайна, но содержимое доступно*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -134,6 +139,11 @@ li {
   background-color: #FCFCFC;
 }
 
+.big-item-container {
+  background-color: #FEAFC3;
+  width: 348px;
+  height: 554px;
+}
 .examples-slider-image-current {
   background-image: url("pictures/around-circle.png");
   background-repeat: no-repeat;
