@@ -24,7 +24,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("1932009-gllacy-33/fonts/inter-400.woff2") format("woff2");
+  src: url("../fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -32,7 +32,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("1932009-gllacy-33/fonts/inter-700.woff2") format("woff2");
+  src: url("../fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -40,7 +40,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url("1932009-gllacy-33/fonts/inter-900.woff2") format("woff2");
+  src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -70,8 +70,8 @@ body {
 
 
 /*--------------отключение пунктов li------------------*/
-li {
-  list-style-type: none;
+ul, ol {
+  list-style: none;
 }
 /*-----------------------------------------------------*/
 
@@ -174,7 +174,7 @@ li {
   height: 554px;
 }
 .examples-slider-image-current {
-  background-image: url("pictures/around-circle.png");
+  background-image: url("");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #FEAFC3;
@@ -197,16 +197,6 @@ li {
   width: 100px;
   height: 150px;
 }
-.small-item-container {
-  background-image: url("pictures/small-circle.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  position: center;
-  background-color: #FEAFC3;
-  width: 100px;
-  height: 150px;
-}
-
 
 
 .examples-footer {
@@ -264,25 +254,26 @@ li {
 
 /*--Преимущества--*/
 .advantages {
-  color: #2D3440;
-  background-color: #FEAFC3;
+  background-image: url(../pictures/index/advantages-background.jpg);
+  height: 480px;
+  width: 1170px;
 }
-.container-advantages {
-  background-color: #FCFCFC;
-  color: #2D3440;
-}
+
 .advantages-title {
-  font-family: "Inter", sans-serif;
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
 }
 
-.advantages {
-  background-color: #FCFCFC;
-}
 
 /*Статья в блоге*/
+.blog {
+  background-image: url(../pictures/index/article-background.jpg);
+  height: 220px;
+  width: 570px;
+
+}
+
 .blog-title {
   font-size: 16px;
   line-height: 20px;
@@ -297,10 +288,6 @@ li {
   color: #2D3440;
 }
 
-.blog {
-  background-color: #FCFCFC;
-}
-
 /*--Оформление подписки--*/
 .button-red {
   text-decoration: none;
@@ -313,18 +300,17 @@ li {
 }
 
 .subscribe {
-  background-color: #FCFCFC;
+  background-image: url("../pictures/index/subscribe-background.jpg");
+  width: 570px;
+  height: 220px;
 }
 
 /*--Оформление доставки--*/
-.test {
 
-  background-color: #FCFCFC;
-
-}
-
-.delivery-form {
-
+.delivery {
+  background-image: url("../pictures/index/delivery-background.jpg");
+  width: 1170px;
+  height: 534px;
 }
 
 .delivery-title {
@@ -340,6 +326,12 @@ li {
 }
 
 /*--Контакты магазина--*/
+.contacts {
+  background-image: url("../pictures/index/contacts-background.jpg");
+  width: 1170px;
+  height: 492px;
+}
+
 .contacts-link {
   color: #2D3440;
   text-decoration: #2D3440 underline;
@@ -365,5 +357,5 @@ li {
   background-color: #FCFCFC;
 }
 .test2 {
-  color: black
+  color: black;
 }
