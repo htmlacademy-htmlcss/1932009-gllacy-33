@@ -1,9 +1,30 @@
+/*-------------------------------------
+.arrow {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  box-sizing: border-box;
+  border-radius: 26px;
+
+}
+.slider-prev {
+
+}
+.slider-pagination-button {
+  background-color: #FEAFC3;
+}
+.pagination-button-current {
+  background-color: #FEAFC3;
+}
+--------------------------------------*/
+
+
+
 /*подключение шрифтов*/
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/inter-400.woff2") format("woff2");
+  src: url("1932009-gllacy-33/fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -11,7 +32,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/inter-700.woff2") format("woff2");
+  src: url("1932009-gllacy-33/fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -19,9 +40,11 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url("fonts/inter-900.woff2") format("woff2");
+  src: url("1932009-gllacy-33/fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
+
+
 
 /*------------------------body-------------------------*/
 body {
@@ -32,34 +55,30 @@ body {
   color: #2D3440;
   background-color: #FEAFC3;
 }
+
+.page-rosy {
+  background-color: #FEAFC3;
+}
+.page-aqua {
+  background-color: #69A9FF;
+}
+.page-camomile {
+  background-color: #FCC850;
+}
 /*-----------------------------------------------------*/
 
-/*безклассовые теги index.html*/
+
+
+/*--------------отключение пунктов li------------------*/
 li {
   list-style-type: none;
 }
+/*-----------------------------------------------------*/
 
-.arrow {
-  background: rgba(252, 252, 252, 0.3);
-  border: 2px solid #FCFCFC;
-  box-sizing: border-box;
-  border-radius: 26px;
 
-}
 
-.slider-prev {
 
-}
-
-.slider-pagination-button {
-  background-color: #FEAFC3;
-
-}
-.pagination-button-current {
-  background-color: #FEAFC3;
-}
-
-/*скрыто для дизайна, но содержимое доступно*/
+/*---скрыто для дизайна, но содержимое доступно---*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -73,42 +92,52 @@ li {
   overflow: hidden;
 
 }
+/*------------------------------------------------*/
 
-/*--Шапка--*/
-.page-header {
-  color: #2D3440;
-  background-color: #FEAFC3;
 
+
+/*---------------Шапка----------------------------*/
+.navigation {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .navigation-link {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
   text-align: center;
   color: #2D3440;
-  background-color: #FEAFC3;
   text-decoration: none;
 }
 
-.support-phone {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 700;
+.information-item-link {
   color: #2D3440;
-  background-color: #FEAFC3;
+  text-decoration: none;
+}
+
+.academy-link {
+  color: #2D3440;
+}
+
+.support-phone {
+  font-weight: 700;
+}
+
+.contacnts-link {
+  text-decoration: #2D3440;
+  color:#2D3440
+}
+.order-phone {
+  color: #2D3440;
+  font-size: 20;
+  line-height: 24;
 }
 
 .navigation-button {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 400;
-  color: #2D3440;
   background-color: #FFCBD8;
+  font-size: 14px;
 }
+/*------------------------------------------------*/
+
+
 
 /*--Рекламный блок--*/
 .examples {
@@ -186,7 +215,7 @@ li {
 
 
 
-/*Специальные акции и предложения*/
+/*------------Специальные акции и предложения-------------*/
 .presents-title {
   font-size: 36px;
   line-height: 46px;
@@ -202,9 +231,11 @@ li {
 .presents-item {
   background-color: #FF7799;
 }
+/*------------------------------------------------------------*/
 
 
-/*Популярные товары*/
+
+/*------------------Популярные товары-------------------------*/
 .products-title {
   font-size: 36px;
   line-height: 46px;
@@ -225,6 +256,10 @@ li {
 
 .products-item {
   background-color: #FCFCFC;
+}
+
+.products-button {
+  background-color: #FF2F64;
 }
 
 /*--Преимущества--*/
@@ -282,12 +317,14 @@ li {
 }
 
 /*--Оформление доставки--*/
-.delivery {
-  background-color: #e6e6e6;
+.test {
+
+  background-color: #FCFCFC;
+
 }
 
 .delivery-form {
-  background-color: #FCFCFC;
+
 }
 
 .delivery-title {
@@ -303,13 +340,30 @@ li {
 }
 
 /*--Контакты магазина--*/
-.contacts {
+.contacts-link {
   color: #2D3440;
-  background-color: #FEAFC3;
+  text-decoration: #2D3440 underline;
 }
 
-.contacts-window {
-  color: #2D3440;
-  background-color: #FEAFC3;
+/*Каталог*/
+.catalog-red {
+  background-color: #FF4A78;
+  color: #FCFCFC;
 }
-
+.breadcrumbs-link {
+  color: #2D3440;
+  text-decoration: #2D3440 underline;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.pagination-link {
+  text-decoration: #2D3440 none;
+  color: #2D3440;
+}
+.pagination-link-current {
+  background-color: #FCFCFC;
+}
+.test2 {
+  color: black
+}
