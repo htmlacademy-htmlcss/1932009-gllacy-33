@@ -1,0 +1,361 @@
+/*-------------------------------------
+.arrow {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  box-sizing: border-box;
+  border-radius: 26px;
+
+}
+.slider-prev {
+
+}
+.slider-pagination-button {
+  background-color: #FEAFC3;
+}
+.pagination-button-current {
+  background-color: #FEAFC3;
+}
+--------------------------------------*/
+
+
+
+/*подключение шрифтов*/
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+
+/*------------------------body-------------------------*/
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+.page-rosy {
+  background-color: #FEAFC3;
+}
+.page-aqua {
+  background-color: #69A9FF;
+}
+.page-camomile {
+  background-color: #FCC850;
+}
+/*-----------------------------------------------------*/
+
+
+
+/*--------------отключение пунктов li------------------*/
+ul, ol {
+  list-style: none;
+}
+/*-----------------------------------------------------*/
+
+
+
+
+/*---скрыто для дизайна, но содержимое доступно---*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+}
+/*------------------------------------------------*/
+
+
+
+/*---------------Шапка----------------------------*/
+.navigation {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navigation-link {
+  text-align: center;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.information-item-link {
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.academy-link {
+  color: #2D3440;
+}
+
+.support-phone {
+  font-weight: 700;
+}
+
+.contacnts-link {
+  text-decoration: #2D3440;
+  color:#2D3440
+}
+.order-phone {
+  color: #2D3440;
+  font-size: 20;
+  line-height: 24;
+}
+
+.navigation-button {
+  background-color: #FFCBD8;
+  font-size: 14px;
+}
+/*------------------------------------------------*/
+
+
+
+/*--Рекламный блок--*/
+.examples {
+
+}
+.examples-left-container {
+  background-color: #FEAFC3;
+  color: #2D3440;
+}
+.examples-title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.examples-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button-white {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #2D3440;
+  background-color: #FCFCFC;
+}
+
+.big-item-container {
+  background-color: #FEAFC3;
+  width: 348px;
+  height: 554px;
+}
+.examples-slider-image-current {
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FEAFC3;
+  /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+  width: 348px;
+  height: 554px;
+
+}
+
+.examples-slider-item-current {
+  width: 348px;
+  height: 554px;
+}
+
+.examples-slider-image {
+
+}
+
+.examples-slider-item {
+  width: 100px;
+  height: 150px;
+}
+
+
+.examples-footer {
+
+}
+
+
+
+/*------------Специальные акции и предложения-------------*/
+.presents-title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.presents-item-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.presents-item {
+  background-color: #FF7799;
+}
+/*------------------------------------------------------------*/
+
+
+
+/*------------------Популярные товары-------------------------*/
+.products-title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.products-item-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.products-price {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.products-item {
+  background-color: #FCFCFC;
+}
+
+.products-button {
+  background-color: #FF2F64;
+}
+
+/*--Преимущества--*/
+.advantages {
+  background-image: url(../pictures/index/advantages-background.jpg);
+  height: 480px;
+  width: 1170px;
+}
+
+.advantages-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+
+/*Статья в блоге*/
+.blog {
+  background-image: url(../pictures/index/article-background.jpg);
+  height: 220px;
+  width: 570px;
+
+}
+
+.blog-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.blog-link {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #2D3440;
+}
+
+/*--Оформление подписки--*/
+.button-red {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FCFCFC;
+  background-color: #2D3440;
+}
+
+.subscribe {
+  background-image: url("../pictures/index/subscribe-background.jpg");
+  width: 570px;
+  height: 220px;
+}
+
+/*--Оформление доставки--*/
+
+.delivery {
+  background-image: url("../pictures/index/delivery-background.jpg");
+  width: 1170px;
+  height: 534px;
+}
+
+.delivery-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.delivery-label {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+/*--Контакты магазина--*/
+.contacts {
+  background-image: url("../pictures/index/contacts-background.jpg");
+  width: 1170px;
+  height: 492px;
+}
+
+.contacts-link {
+  color: #2D3440;
+  text-decoration: #2D3440 underline;
+}
+
+/*Каталог*/
+.catalog-red {
+  background-color: #FF4A78;
+  color: #FCFCFC;
+}
+.breadcrumbs-link {
+  color: #2D3440;
+  text-decoration: #2D3440 underline;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.pagination-link {
+  text-decoration: #2D3440 none;
+  color: #2D3440;
+}
+.pagination-link-current {
+  background-color: #FCFCFC;
+}
+.test2 {
+  color: black;
+}
