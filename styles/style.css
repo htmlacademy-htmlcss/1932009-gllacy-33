@@ -1,24 +1,3 @@
-/*-------------------------------------
-.arrow {
-  background: rgba(252, 252, 252, 0.3);
-  border: 2px solid #FCFCFC;
-  box-sizing: border-box;
-  border-radius: 26px;
-
-}
-.slider-prev {
-
-}
-.slider-pagination-button {
-  background-color: #FEAFC3;
-}
-.pagination-button-current {
-  background-color: #FEAFC3;
-}
---------------------------------------*/
-
-
-
 /*подключение шрифтов*/
 @font-face {
   font-family: "Inter";
@@ -47,7 +26,7 @@
 
 
 /*------------------------body-------------------------*/
-body {
+.page-rosy {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -56,9 +35,6 @@ body {
   background-color: #FEAFC3;
 }
 
-.page-rosy {
-  background-color: #FEAFC3;
-}
 .page-aqua {
   background-color: #69A9FF;
 }
@@ -76,8 +52,6 @@ ul, ol {
 /*-----------------------------------------------------*/
 
 
-
-
 /*---скрыто для дизайна, но содержимое доступно---*/
 .visually-hidden {
   position: absolute;
@@ -90,14 +64,13 @@ ul, ol {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-
 }
 /*------------------------------------------------*/
 
 
 
 /*---------------Шапка----------------------------*/
-.navigation {
+.page-header {
   font-size: 16px;
   line-height: 20px;
 }
@@ -113,6 +86,10 @@ ul, ol {
   text-decoration: none;
 }
 
+.information-item-link-lovly {
+  font-weight: 700;
+}
+
 .academy-link {
   color: #2D3440;
 }
@@ -121,19 +98,22 @@ ul, ol {
   font-weight: 700;
 }
 
-.contacnts-link {
+
+
+.contacts-link {
   text-decoration: #2D3440;
   color:#2D3440
-}
-.order-phone {
-  color: #2D3440;
-  font-size: 20;
-  line-height: 24;
 }
 
 .navigation-button {
   background-color: #FFCBD8;
   font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 26px;
+}
+
+.navigation-search {
+  padding: 8px;
 }
 /*------------------------------------------------*/
 
@@ -160,12 +140,13 @@ ul, ol {
 
 .button-white {
   text-decoration: none;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #2D3440;
   background-color: #FCFCFC;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
 }
 
 .big-item-container {
@@ -189,25 +170,14 @@ ul, ol {
   height: 554px;
 }
 
-.examples-slider-image {
-
-}
-
 .examples-slider-item {
   width: 100px;
   height: 150px;
 }
 
-
-.examples-footer {
-
-}
-
-
-
 /*------------Специальные акции и предложения-------------*/
 .presents-title {
-  font-size: 36px;
+  font-size: 32px;
   line-height: 46px;
   font-weight: 900;
 }
@@ -227,7 +197,7 @@ ul, ol {
 
 /*------------------Популярные товары-------------------------*/
 .products-title {
-  font-size: 36px;
+  font-size: 32px;
   line-height: 46px;
   font-weight: 900;
 }
@@ -250,13 +220,14 @@ ul, ol {
 
 .products-button {
   background-color: #FF2F64;
+  border-radius: 26px;
 }
 
 /*--Преимущества--*/
 .advantages {
   background-image: url(../pictures/index/advantages-background.jpg);
-  height: 480px;
   width: 1170px;
+  border-radius: 16px;
 }
 
 .advantages-title {
@@ -271,13 +242,13 @@ ul, ol {
   background-image: url(../pictures/index/article-background.jpg);
   height: 220px;
   width: 570px;
-
+  border-radius: 16px;
 }
 
 .blog-title {
-  font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  font-size: 16px;
 }
 
 .blog-link {
@@ -290,19 +261,23 @@ ul, ol {
 
 /*--Оформление подписки--*/
 .button-red {
+  font-family: inherit;
   text-decoration: none;
-  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #FCFCFC;
-  background-color: #2D3440;
+  background-color: #FF2F64;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
 }
 
 .subscribe {
   background-image: url("../pictures/index/subscribe-background.jpg");
   width: 570px;
   height: 220px;
+  border-radius: 16px;
 }
 
 /*--Оформление доставки--*/
@@ -311,12 +286,21 @@ ul, ol {
   background-image: url("../pictures/index/delivery-background.jpg");
   width: 1170px;
   height: 534px;
+  border-radius: 16px;
 }
 
 .delivery-title {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
+}
+
+.delivery-description {
+  color: #565C66;
+}
+
+.delivery-form-description {
+  color: #565C66;
 }
 
 .delivery-label {
@@ -330,17 +314,58 @@ ul, ol {
   background-image: url("../pictures/index/contacts-background.jpg");
   width: 1170px;
   height: 492px;
+  border-radius: 16px;
 }
 
-.contacts-link {
+.contacts-number {
   color: #2D3440;
-  text-decoration: #2D3440 underline;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts-text-address,
+.contacts-text-phone     {
+  color: #565C66;
+}
+
+.contacts-text-time {
+  color: #565C66;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts-address {
+  color: #2D3440;
+  font-size: 20px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.contacts-phone-and-time {
+
 }
 
 /*Каталог*/
+.page-inner {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+
 .catalog-red {
   background-color: #FF4A78;
   color: #FCFCFC;
+  width: 95px;
+  height: 36px;
+  border-radius: 26px;
+  padding: 8px 16px;
 }
 .breadcrumbs-link {
   color: #2D3440;
@@ -349,13 +374,50 @@ ul, ol {
   font-size: 14px;
   line-height: 20px;
 }
+.breadcrumbs-link-current {
+  text-decoration: none;
+}
+
+.button-apply {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  border-radius: 20px;
+  padding: 8px 54px;
+}
+
+.icecream-type-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.products-description-catalog {
+  color: #565C66;
+}
+
+.pagination-show-more {
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #FCFCFC;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+}
+
 .pagination-link {
   text-decoration: #2D3440 none;
   color: #2D3440;
 }
 .pagination-link-current {
   background-color: #FCFCFC;
+  border-radius: 50px;
+  padding: 2px 8px;
 }
-.test2 {
-  color: black;
-}
+
