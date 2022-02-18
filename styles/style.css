@@ -59,26 +59,45 @@ html {
   flex-grow: 1;
 }
 
-.page-container {
-  width: 1366px;
+.page-main {
+  width: 1170px;
   margin: 0 auto;
 }
 
-.gllacy-logo {
+.examples-container {
+  width: 1170px;
+  display: flex;
+  margin: 0 auto
 
 }
 
-.advantages-list {
-
+.examples-slider-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.advantages-item {
-
+.examples-footer {
+  display: flex;
+  width: 1170px;
+}
+.slider-pagination {
+  display: flex;
+}
+.social-list {
+  display: flex;
+  margin-left: auto;
 }
 
-.advantages-description {
-  width: 442px;
+.examples-title {
+  width: 470px;
 }
+
+.examples-description {
+  width: 414px;
+}
+
+
 
 /*-----------------------------------------------------*/
 
@@ -89,7 +108,8 @@ html {
 /* было глобально: ul, ol */
 
 .navigation-list, .navigation-user,
-.advantages-list {
+.advantages-list, .examples-slider-list,
+.social-list {
   list-style: none;
 }
 
@@ -116,6 +136,9 @@ html {
 
 /*---------------Шапка----------------------------*/
 .page-header {
+  display: flex;
+
+  margin: 0 auto;
   font-size: 16px;
   line-height: 20px;
 }
@@ -123,12 +146,14 @@ html {
 .navigation {
   display: flex;
   width: 1170px;
-  margin: 0 auto;
 }
 
 .navigation-list {
+  display: flex;
   margin: 0;
   padding: 0;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 .navigation-left {
   width: 400px;
@@ -137,6 +162,15 @@ html {
 .navigation-user {
   margin-left: auto;
   width: 419px;
+}
+
+
+.examples-container-left {
+  width: 470;
+}
+
+.examples-container-right {
+  width: 631px;
 }
 
 .navigation-link {

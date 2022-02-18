@@ -13,9 +13,6 @@
 
     <!--Главный заголовок-->
     <h1 class="visually-hidden">Онлайн магазин мороженого «Глейси»</h1>
-
-
-
     <!--Основная навигация-->
     <nav class="navigation">
       <!--Основная навигация(left)-->
@@ -74,29 +71,32 @@
 
   <!---------------------------Основная информация---------------------------------->
   <main class="page-main main-container">
-  <div class="page-container">
+
     <section class="examples">
-      <h2 class="visually-hidden">Реклама</h2>
+      <div class="examples-container">
+        <div class="examples-container-left">
+          <h2 class="visually-hidden">Реклама</h2>
 
-      <h3 class="examples-title">Нежный пломбир с клубничным джемом</h3>
-      <p class="examples-description">
-        Натуральное мороженое из свежих сливок
-        и молока с вкуснейшим клубничным джемом – это идеальный
-        десерт для всей семьи.
-      </p>
-      <a href="#" class="button-white">Заказать</a>
-
+          <h3 class="examples-title">Нежный пломбир с клубничным джемом</h3>
+          <p class="examples-description">
+          Натуральное мороженое из свежих сливок
+          и молока с вкуснейшим клубничным джемом – это идеальный
+          десерт для всей семьи.
+          </p>
+          <a href="#" class="button-white">Заказать</a>
+        </div>
       <!--Список картинок и кнопки переключения -->
-      <ul class="examples-slider-list">
-        <li class="examples-slider-item-current">
-          <a class="slider-prev">
-            <img src="pictures/index/arrow-left.svg" width="16" height="16" class="arrow" alt="Предыдущее фото">
-          </a>
-          <img src="pictures/index/icecream-big.png" width="306" height="507" alt="Клубничный пломбир" class="">
-          <a class="slider-next">
-            <img src="pictures/index/arrow-right.svg" width="16" height="16" class="arrow alt=" Следующее фото">
-          </a>
-        </li>
+          <div class="examples-container-right">
+            <ul class="examples-slider-list">
+             <li class="examples-slider-item-current">
+               <a class="slider-prev">
+                 <img src="pictures/index/arrow-left.svg" width="16" height="16" class="arrow" alt="Предыдущее фото">
+               </a>
+               <img src="pictures/index/icecream-big.png" width="306" height="507" alt="Клубничный пломбир" class="">
+                   <a class="slider-next">
+                          <img src="pictures/index/arrow-right.svg" width="16" height="16" class="arrow" alt="Следующее фото">
+                   </a>
+             </li>
         <li class="examples-slider-item">
           <img src="pictures/index/icecream-small-1.png" width="66" height="150" alt="Банановое морожко"
             class="examples-slider-image">
@@ -104,9 +104,10 @@
         <li class="examples-slider-item">
           <img src="pictures/index/icecream-small-2.png" width="66" height="150" alt="Карамельный пломбир"
             class="examples-slider-image">
-        </li>
-      </ul>
-
+            </li>
+          </ul>
+        </div>
+      </div>
       <footer class="examples-footer">
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
