@@ -23,9 +23,15 @@
   font-display: swap;
 }
 
-
+html {
+  height: 100%;
+}
 /*------------------------body-------------------------*/
 .page {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -47,14 +53,47 @@
 .page-camomile {
   background-color: #FCC850;
 }
+
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.gllacy-logo {
+
+}
+
+.advantages-list {
+
+}
+
+.advantages-item {
+
+}
+
+.advantages-description {
+  width: 442px;
+}
+
 /*-----------------------------------------------------*/
 
 
 
 /*--------------отключение пунктов li------------------*/
-ul, ol {
+
+/* было глобально: ul, ol */
+
+.navigation-list, .navigation-user,
+.advantages-list {
   list-style: none;
 }
+
+
 /*-----------------------------------------------------*/
 
 
@@ -88,17 +127,16 @@ ul, ol {
 }
 
 .navigation-list {
-  width: 400px;
   margin: 0;
   padding: 0;
-  margin-right: auto;
+}
+.navigation-left {
+  width: 400px;
 }
 
 .navigation-user {
-  width: 419px;
-  margin: 0;
-  padding: 0;
   margin-left: auto;
+  width: 419px;
 }
 
 .navigation-link {
@@ -143,9 +181,7 @@ ul, ol {
 /*------------------------------------------------*/
 
 /*--------------------Основное содержимое----------*/
-.main-container {
-  flex-grow: 1;
-}
+
 
 
 /*--Рекламный блок--*/
@@ -258,6 +294,8 @@ ul, ol {
   width: 1170px;
   border-radius: 16px;
 }
+
+
 
 .advantages-title {
   font-size: 32px;
