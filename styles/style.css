@@ -24,16 +24,22 @@
 }
 
 
-
 /*------------------------body-------------------------*/
-.page-rosy {
+.page-main {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #2D3440;
-  background-color: #FEAFC3;
+
 }
+
+.page-rosy {
+  background-color: #FEAFC3;
+
+}
+
+
 
 .page-aqua {
   background-color: #69A9FF;
@@ -75,8 +81,27 @@ ul, ol {
   line-height: 20px;
 }
 
+.navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+}
+
+.navigation-user {
+  width: 419px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
 .navigation-link {
-  text-align: center;
   color: #2D3440;
   text-decoration: none;
 }
@@ -117,6 +142,10 @@ ul, ol {
 }
 /*------------------------------------------------*/
 
+/*--------------------Основное содержимое----------*/
+.main-container {
+  flex-grow: 1;
+}
 
 
 /*--Рекламный блок--*/
