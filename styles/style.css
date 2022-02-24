@@ -23,30 +23,28 @@
   font-display: swap;
 }
 
+/*-----------------------html----------------------*/
 html {
   height: 100%;
-}
+  }
+/*------------------------------------------------*/
+
 /*------------------------body-------------------------*/
 .page {
-  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  margin: 0;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #2D3440;
-
 }
 
 .page-rosy {
   background-color: #FEAFC3;
-
 }
-
-
-
 .page-aqua {
   background-color: #69A9FF;
 }
@@ -54,66 +52,18 @@ html {
   background-color: #FCC850;
 }
 
-
-.main-container {
-  flex-grow: 1;
-}
-
-.page-main {
-  width: 1170px;
-  margin: 0 auto;
-}
-
-.examples-container {
-  width: 1170px;
-  display: flex;
-  margin: 0 auto
-
-}
-
-.examples-slider-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.examples-footer {
-  display: flex;
-  width: 1170px;
-}
-.slider-pagination {
-  display: flex;
-}
-.social-list {
-  display: flex;
-  margin-left: auto;
-}
-
-.examples-title {
-  width: 470px;
-}
-
-.examples-description {
-  width: 414px;
-}
-
-
-
 /*-----------------------------------------------------*/
 
 
 
 /*--------------отключение пунктов li------------------*/
-
-/* было глобально: ul, ol */
-
 .navigation-list, .navigation-user,
 .advantages-list, .examples-slider-list,
-.social-list {
+.social-list, .presents-list, .products-list,
+.information, .breadcrumbs, .catalog-filter-list,
+.pagination {
   list-style: none;
 }
-
-
 /*-----------------------------------------------------*/
 
 
@@ -136,41 +86,8 @@ html {
 
 /*---------------Шапка----------------------------*/
 .page-header {
-  display: flex;
-
-  margin: 0 auto;
   font-size: 16px;
   line-height: 20px;
-}
-
-.navigation {
-  display: flex;
-  width: 1170px;
-}
-
-.navigation-list {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: space-evenly;
-  margin-top: 20px;
-}
-.navigation-left {
-  width: 400px;
-}
-
-.navigation-user {
-  margin-left: auto;
-  width: 419px;
-}
-
-
-.examples-container-left {
-  width: 470;
-}
-
-.examples-container-right {
-  width: 631px;
 }
 
 .navigation-link {
@@ -178,6 +95,42 @@ html {
   text-decoration: none;
 }
 
+.support-phone {
+  font-weight: 700;
+}
+
+.navigation-button {
+  background-color: #FFCBD8;
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 26px;
+}
+
+.navigation-search {
+  padding: 8px;
+}
+
+.navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-left {
+  width: 400px;
+}
+
+.navigation-user {
+  width: 419px;
+  margin-left: auto;
+}
+
+/*------------------------------------------------*/
 .information-item-link {
   color: #2D3440;
   text-decoration: none;
@@ -191,37 +144,29 @@ html {
   color: #2D3440;
 }
 
-.support-phone {
-  font-weight: 700;
-}
 
 
-
-.contacts-link {
-  text-decoration: #2D3440;
-  color:#2D3440
-}
-
-.navigation-button {
-  background-color: #FFCBD8;
-  font-size: 14px;
-  padding: 6px 16px;
-  border-radius: 26px;
-}
-
-.navigation-search {
-  padding: 8px;
-}
 /*------------------------------------------------*/
 
-/*--------------------Основное содержимое----------*/
 
 
-
-/*--Рекламный блок--*/
-.examples {
-
+/*--------------------Основное содержимое----------------------*/
+.main-container {
+  flex-grow: 1;
 }
+
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+
+
+/*-------------------------------------------------------------*/
+
+
+/*------------Рекламный блок-----------------------*/
+
 .examples-left-container {
   background-color: #FEAFC3;
   color: #2D3440;
@@ -258,10 +203,8 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #FEAFC3;
-  /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
   width: 348px;
   height: 554px;
-
 }
 
 .examples-slider-item-current {
@@ -274,21 +217,84 @@ html {
   height: 150px;
 }
 
+.examples-container {
+  display: flex;
+}
+
+.examples-container-left {
+  width: 430px;
+}
+
+.examples-container-right {
+  width: 633px;
+}
+
+.examples-slider-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.examples-slider-item-current {
+  display: flex;
+  align-items: center;
+}
+
+.examples-footer {
+  display: flex;
+}
+
+.slider-pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+
 /*------------Специальные акции и предложения-------------*/
 .presents-title {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 80px;
+  width: 443px;
+  text-align: center;
+}
+
+.presents-list {
+  margin: 0;
+  margin-top: 55px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.presents-item {
+  display: flex;
+  width: 570px;
+  background-color: #FF7799;
+  border-radius: 16px;
 }
 
 .presents-item-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+
 }
 
-.presents-item {
-  background-color: #FF7799;
+.presents-item-container {
+  max-width: 321px;
 }
 /*------------------------------------------------------------*/
 
@@ -299,6 +305,11 @@ html {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
+  width: 527px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  margin-top: 80px;
 }
 
 .products-item-title {
@@ -313,32 +324,58 @@ html {
   font-weight: 700;
 }
 
-.products-item {
-  background-color: #FCFCFC;
-}
-
 .products-button {
   background-color: #FF2F64;
   border-radius: 26px;
 }
 
-/*--Преимущества--*/
-.advantages {
-  background-image: url(../pictures/index/advantages-background.jpg);
-  width: 1170px;
-  border-radius: 16px;
+.products-list {
+  margin: 0;
+  margin-top: 55px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+
+.products-item {
+  width: 270px;
+  height: 332px;
+  background-color: #FCFCFC;
+  margin-bottom: 40px;
 }
 
 
+/*------------------------Преимущества-------------------*/
+.advantages {
+  margin-top: 80px;
+  background-image: url(../pictures/index/advantages-background.jpg);
+  border-radius: 16px;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 506px;
+  display: flex;
+}
 
 .advantages-title {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
 }
+/*--------------------------------------------------------*/
 
 
-/*Статья в блоге*/
+/*---------------------Статья в блоге и оформление подписки----------------------*/
 .blog {
   background-image: url(../pictures/index/article-background.jpg);
   height: 220px;
@@ -360,7 +397,6 @@ html {
   color: #2D3440;
 }
 
-/*--Оформление подписки--*/
 .button-red {
   font-family: inherit;
   text-decoration: none;
@@ -381,7 +417,16 @@ html {
   border-radius: 16px;
 }
 
-/*--Оформление доставки--*/
+.article-and-sub-container {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+/*-------------------------------------------------------------------------------*/
+
+
+
+/*----------------------Оформление доставки----------------*/
 
 .delivery {
   background-image: url("../pictures/index/delivery-background.jpg");
@@ -410,12 +455,31 @@ html {
   font-weight: 700;
 }
 
-/*--Контакты магазина--*/
+.delivery {
+  display: flex;
+  margin-top: 80px;
+}
+
+.delivery-form {
+  background-color: #FCFCFC;
+  width: 500px;
+  height: 406px;
+}
+
+.delivery-container {
+  width: 371px;
+}
+/*--------------------------------------------------------*/
+
+
+
+/*--------------------Контакты магазина--------------------*/
 .contacts {
   background-image: url("../pictures/index/contacts-background.jpg");
   width: 1170px;
   height: 492px;
   border-radius: 16px;
+  margin-top: 80px;
 }
 
 .contacts-number {
@@ -444,12 +508,30 @@ html {
   font-style: normal;
   font-weight: 700;
 }
+/*--------------------------------------------------------*/
 
-.contacts-phone-and-time {
+
+/*------------------- Футер------------------------------ */
+.page-footer {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 
 }
 
-/*Каталог*/
+.social-list-footer {
+  margin: 0;
+}
+
+.information {
+  margin: 0;
+  padding: 0;
+}
+/*--------------------------------------------------------*/
+
+
+/*-------------------------Каталог-------------------------*/
 .page-inner {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -459,7 +541,6 @@ html {
   background-color: #FEAFC3;
 }
 
-
 .catalog-red {
   background-color: #FF4A78;
   color: #FCFCFC;
@@ -467,16 +548,6 @@ html {
   height: 36px;
   border-radius: 26px;
   padding: 8px 16px;
-}
-.breadcrumbs-link {
-  color: #2D3440;
-  text-decoration: #2D3440 underline;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-}
-.breadcrumbs-link-current {
-  text-decoration: none;
 }
 
 .button-apply {
@@ -522,3 +593,74 @@ html {
   padding: 2px 8px;
 }
 
+        /* catalog-header */
+/*--------------Хлебные крошки-----------------------------*/
+.breadcrumbs-link {
+  color: #2D3440;
+  text-decoration: #2D3440 underline;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.breadcrumbs-link-current {
+  text-decoration: none;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+/*--------------------------------------------------------*/
+.icecream-type-title {
+  margin-top: 16px;
+}
+
+/*-------------Фильтры------------------------------------*/
+.catalog-filter {
+  margin-top: 40px;
+  display: flex;
+  width: 807px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.button-apply {
+  align-self: flex-end;
+}
+
+
+/* Пагинация каталога */
+.catalog-pagination-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.pagination-show-more {
+  margin: 0 auto;
+}
+
+.catalog-pagination-container-right {
+  width: 185px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+}
