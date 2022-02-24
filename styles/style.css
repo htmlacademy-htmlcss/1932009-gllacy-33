@@ -533,6 +533,10 @@ html {
 
 /*-------------------------Каталог-------------------------*/
 .page-inner {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
