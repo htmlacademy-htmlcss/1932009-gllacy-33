@@ -532,6 +532,10 @@ html {
 
 
 /*-------------------------Каталог-------------------------*/
+.catalog-products {
+  flex-grow: 1;
+}
+
 .page-inner {
   display: flex;
   flex-direction: column;
