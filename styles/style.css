@@ -93,10 +93,30 @@ html {
 .navigation-link {
   color: #2D3440;
   text-decoration: none;
+  display: block;
+  max-width: 179px;
+  height: 36px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+}
+
+.navigation-link-left {
+
+}
+
+.gllacy-logo {
+  padding: 24px 0px;
+  margin-right: 16px;
 }
 
 .support-phone {
   font-weight: 700;
+  max-width: 148px;
+  max-height: 20px;
+  box-sizing: content-box;
+  padding: 0;
+  padding-top: 42px;
+
 }
 
 .navigation-button {
@@ -117,33 +137,99 @@ html {
 }
 
 .navigation-list {
+  margin: 34px 0px;
+  padding: 0;
+  display: flex;
+}
+.slider-pagination-item {
+  display: block;
+  box-sizing: content-box;
+  min-width: 12px;
+  min-height: 12px;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+  margin-right: 8px;
+  /* каждому третьему убрать маржин */
+}
+
+.slider-pagination {
+  display: flex;
   margin: 0;
   padding: 0;
+  align-items: flex-end;
+  flex-wrap: wrap;
+
 }
+
 
 .navigation-left {
-  width: 400px;
+  max-width: 400px;
 }
 
-.navigation-user {
-  width: 419px;
+.navigation-right-container {
   margin-left: auto;
+  display: flex;
 }
+
 
 /*------------------------------------------------*/
 .information-item-link {
   color: #2D3440;
   text-decoration: none;
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+
 }
 
 .information-item-link-lovly {
   font-weight: 700;
 }
 
+.lovly-icon-container {
+  width: 16px;
+  height: 16px;
+}
+
+.lovly-item-container {
+  display: flex;
+}
+
+.information-item-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+.information-item-link-1 {
+  align-self: center;
+
+}
+
+.information-item-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 182px;
+  box-sizing: content-box;
+  margin-left: 24px;
+
+}
+
+
+
+
 .academy-link {
   color: #2D3440;
 }
 
+
+.academy-text {
+  margin: 0;
+  margin-top: 14px;
+}
 
 
 /*------------------------------------------------*/
@@ -158,6 +244,7 @@ html {
 .page-container {
   width: 1170px;
   margin: 0 auto;
+
 }
 
 
@@ -191,6 +278,8 @@ html {
   border: 4px solid rgba(252, 252, 252, 0.4);
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
+  display: block;
+  align-self: flex-start;
 }
 
 .big-item-container {
@@ -223,6 +312,8 @@ html {
 
 .examples-container-left {
   width: 430px;
+  display: flex;
+  flex-direction: column;
 }
 
 .examples-container-right {
@@ -236,6 +327,8 @@ html {
   padding: 0;
 }
 
+
+
 .examples-slider-item-current {
   display: flex;
   align-items: center;
@@ -243,6 +336,7 @@ html {
 
 .examples-footer {
   display: flex;
+
 }
 
 .slider-pagination {
@@ -281,20 +375,29 @@ html {
 
 .presents-item {
   display: flex;
+  flex-wrap: wrap;
   width: 570px;
   background-color: #FF7799;
   border-radius: 16px;
+}
+
+.presents-item-2 {
+
 }
 
 .presents-item-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
 
 }
 
 .presents-item-container {
   max-width: 321px;
+  display: flex;
+  flex-direction: column;
 }
 /*------------------------------------------------------------*/
 
@@ -316,6 +419,12 @@ html {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.products-pic {
+  display: block;
 }
 
 .products-price {
@@ -331,20 +440,21 @@ html {
 
 .products-list {
   margin: 0;
-  margin-top: 55px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  padding-top: 48px;
+  row-gap: 40px;
+  column-gap: 30px;
 
 }
 
 .products-item {
-  width: 270px;
-  height: 332px;
   background-color: #FCFCFC;
-  margin-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -360,17 +470,34 @@ html {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.advantages-list-container {
+  margin: 0 auto;
+  width: 1042px;
 }
 
 .advantages-item {
   width: 506px;
   display: flex;
+  margin-bottom: 40px;
+  /* у каждого второго кроме последнего задать margin-left */
+}
+
+.advantages-description {
+  margin: 0;
+  width: 442px;
 }
 
 .advantages-title {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
+  margin: 0;
+  text-align: center;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 /*--------------------------------------------------------*/
 
@@ -439,14 +566,20 @@ html {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
+  margin: 0;
+  text-align: left;
 }
 
 .delivery-description {
   color: #565C66;
+  margin: 0;
+  text-align: left;
+  margin-top: 24px;
 }
 
 .delivery-form-description {
   color: #565C66;
+  margin: 0;
 }
 
 .delivery-label {
@@ -464,10 +597,15 @@ html {
   background-color: #FCFCFC;
   width: 500px;
   height: 406px;
+  margin-top: 64px;
+  margin-left: 135px;
+
 }
 
 .delivery-container {
   width: 371px;
+  margin-top: 167px;
+  margin-left: 100px;
 }
 /*--------------------------------------------------------*/
 
@@ -517,6 +655,8 @@ html {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 48px;
 
 }
 
@@ -527,6 +667,9 @@ html {
 .information {
   margin: 0;
   padding: 0;
+  display: flex;
+  width: 356px;
+  flex-wrap: wrap;
 }
 /*--------------------------------------------------------*/
 
@@ -534,6 +677,7 @@ html {
 /*-------------------------Каталог-------------------------*/
 .catalog-products {
   flex-grow: 1;
+  padding-top: 40px;
 }
 
 .page-inner {
@@ -573,10 +717,17 @@ html {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  margin: 0;
+  padding-top: 16px;
 }
 
 .products-description-catalog {
   color: #565C66;
+
+}
+
+.products-description {
+  width: 190px;
 }
 
 .pagination-show-more {
@@ -589,6 +740,9 @@ html {
   border: 4px solid rgba(252, 252, 252, 0.4);
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
+  padding: 12px 32px;
+  align-self: center;
+  margin-left: 494px;
 }
 
 .pagination-link {
@@ -609,6 +763,7 @@ html {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  /* у всех кроме первой отступ слева 8px */
 }
 .breadcrumbs-link-current {
   text-decoration: none;
@@ -618,22 +773,19 @@ html {
   margin: 0;
   padding: 0;
   display: flex;
-  width: 250px;
-  justify-content: space-between;
-  margin-top: 32px;
+  flex-wrap: wrap;
+  min-width: 250px;
+  padding-top: 32px;
 }
 /*--------------------------------------------------------*/
-.icecream-type-title {
-  margin-top: 16px;
-}
+
 
 /*-------------Фильтры------------------------------------*/
 .catalog-filter {
-  margin-top: 40px;
   display: flex;
   width: 807px;
   flex-wrap: wrap;
-  justify-content: space-between;
+
 }
 
 .catalog-filter-list {
@@ -651,18 +803,19 @@ html {
 .catalog-pagination-container {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 50px;
+  margin-top: 16px;
+  padding-top: 41px;
+  padding-bottom: 41px;
 }
 
-.pagination-show-more {
-  margin: 0 auto;
-}
+
 
 .catalog-pagination-container-right {
   width: 185px;
   margin-left: auto;
   display: flex;
   justify-content: space-between;
+  align-self: center;
 }
 
 .pagination {
