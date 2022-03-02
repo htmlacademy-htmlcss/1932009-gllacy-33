@@ -371,6 +371,7 @@ html {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .presents-item {
@@ -379,6 +380,8 @@ html {
   width: 570px;
   background-color: #FF7799;
   border-radius: 16px;
+  margin-bottom: 30px;
+  /* добавить отступы сниза и справа у всех кроме четных */
 }
 
 .presents-item-2 {
@@ -471,12 +474,14 @@ html {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding-left: 64px;
+  /* padding-top: 80px; */
 }
 
-.advantages-list-container {
+/* .advantages-list-container {
   margin: 0 auto;
   width: 1042px;
-}
+} */
 
 .advantages-item {
   width: 506px;
