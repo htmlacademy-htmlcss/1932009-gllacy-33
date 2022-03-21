@@ -142,11 +142,9 @@ html {
 }
 
 .support-phone:focus {
-  text-decoration-color: #2D3440;
+  text-decoration: #2D3440 underline 2px;
   outline: none;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-thickness: 2px;
+
 
 
 
@@ -803,7 +801,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   margin-top: 107px;
-  row-gap: 40px;
+  row-gap: 90px;
   column-gap: 30px;
 
 }
@@ -1288,9 +1286,12 @@ html {
   line-height: 20px;
   font-weight: 700;
   background-color: rgba(252, 252, 252, 0.3);
-  border: 2px solid #FCFCFC;
+
   border-radius: 20px;
-  padding: 8px 54px;
+  padding: 8px 53.5px;
+    box-sizing: border-box;
+    border: none;
+    outline: 2px solid #FCFCFC;
 }
 
 .icecream-type-title {
@@ -1350,7 +1351,7 @@ html {
 /*--------------Хлебные крошки-----------------------------*/
 .breadcrumbs-link {
   color: #2D3440;
-  text-decoration: #2D3440 underline;
+  text-decoration: #2D3440 underline 2px;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -1366,7 +1367,22 @@ html {
   display: flex;
   flex-wrap: wrap;
   min-width: 250px;
-  padding-top: 32px;
+  column-gap: 28px;
+
+}
+
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item:not(.breadcrumbs-item:last-of-type)::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 6px;
+  background-image: url("../pictures/catalog/catalog-breadcrumbs.svg");
+  margin-left: 10px;
+  margin-top: 9px;
 }
 /*--------------------------------------------------------*/
 
@@ -1376,17 +1392,127 @@ html {
   display: flex;
   width: 807px;
   flex-wrap: wrap;
+  align-items: flex-end;
+  column-gap: 24px;
 
+}
+
+.select-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.range-wrapper {
+  width: 164px;
+    height: 16px;
+
+    background-color: rgba(252, 252, 252, 0.3);
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+}
+
+.select-control {
+  width: 196px;
+  height: 36px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+
+  border-radius: 20px;
+  background-color: #FFCBD8;
+  text-align: center;
+  color: #2D3440;
+
+}
+
+.select-control:focus {
+  outline: none;
+}
+
+.filter-label {
+  margin-bottom: 8px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 10px;
+}
+
+.filter-lebel-text {
+  margin-bottom: 8px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 10px;
 }
 
 .catalog-filter-list {
   margin: 0;
   padding: 0;
   display: flex;
+  column-gap: 16px;
+  padding: 8px 16px;
+    background-color: rgba(252, 252, 252, 0.3);
+    border-radius: 20px;
+
 }
 
 .button-apply {
   align-self: flex-end;
+}
+
+/* Чекбоксы */
+
+.control {
+  position: relative;
+  display: block;
+  min-width: 45px;
+  max-width: 154px;
+}
+
+.control-mark {
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.33333px solid #2D3440;
+  box-sizing: border-box;
+  top: 3px;
+}
+
+.control-mark-2 {
+  border-radius: 2px;
+}
+
+.control-label {
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 24px;
+
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #242424;
+  border-radius: 50%;
+  left: 4px;
+  top: 4px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark-2 {
+  background-image: url(../pictures/catalog/check-filler.svg);
+  border: none;
+
+}
+
+.control-input[type="checkbox"]:checked + .control-mark-2::before {
+  content: none;
 }
 
 
@@ -1420,5 +1546,125 @@ html {
 
 
 /* всякий стайлинг */
+
+.range-scale {
+  position: relative;
+  width: 164px;
+height: 0px;
+  background-color: rgba(86, 92, 102, 0.3);
+  border: 2px solid rgba(86, 92, 102, 0.3);;
+  border-radius: 2px;
+
+
+
+
+}
+
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #565C66;
+  border-radius: 2px;
+  top: -2px;
+  left: 60px;
+  width: 56px;
+}
+
+
+.range-toggle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #242424;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.range-toggle:hover {
+  background-color: #FCFCFC;
+}
+
+.range-toggle:hover .white-circle-slider {
+  background-color: #242424;
+}
+
+
+
+.white-circle-slider {
+  background-color: #FCFCFC;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+.black-circle-slider {
+  width: 100%;
+}
+
+
+.toggle-min {
+  left: -2px;
+  top: -6px;
+}
+
+.toggle-max {
+  left: 40px;
+  top: -6px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+  font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.range-input {
+  width: 25px;
+  padding: 0 1px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+  color: #2D3440;
+    font-size: 14px;
+    line-height: 20px;
+  padding-right: 2px;
+}
+
+.range-input-min {
+  padding-right: 3px;
+}
+
+.range-input-max {
+  width: 30px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+
+.catalog-filter-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
 
 
