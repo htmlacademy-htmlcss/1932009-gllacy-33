@@ -1394,6 +1394,7 @@ html {
   flex-wrap: wrap;
   align-items: flex-end;
   column-gap: 24px;
+  row-gap: 16px;
 
 }
 
@@ -1432,12 +1433,17 @@ html {
   outline: none;
 }
 
-.filter-label {
+.filter-item-title {
   margin-bottom: 8px;
   display: inline-block;
   font-size: 14px;
   line-height: 20px;
   padding-left: 10px;
+}
+
+.filter-title-price {
+  margin-bottom: 0px;
+  margin-right: 2px;
 }
 
 .filter-lebel-text {
@@ -1620,7 +1626,8 @@ height: 0px;
 
 .range-wrapper-inputs {
   display: flex;
-  justify-content: center;
+  align-items: end;
+  margin-bottom: 8px;
 }
 
 .catalog-filter-label {
