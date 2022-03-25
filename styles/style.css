@@ -143,6 +143,7 @@ html {
 
 .support-phone:focus {
   text-decoration: #2D3440 underline 2px;
+  background-color: #FEAFC3;
   outline: none;
 
 
@@ -952,7 +953,7 @@ html {
 /*---------------------Статья в блоге и оформление подписки----------------------*/
 .blog {
   background-image: url(../pictures/index/article-background.jpg);
-
+  background-color: #FCFCFC;
   width: 570px;
   border-radius: 16px;
 }
@@ -1035,7 +1036,8 @@ html {
   outline: none;
   padding: 13px 16px;
   padding-right: 15px;
-  border: 1px solid #B9B9B9;
+  outline: 1px solid #B9B9B9;
+  border: none;
   border-radius: 4px;
   background-color: #FFFFFF;
   font-family: "Inter", sans-serif;
@@ -1312,6 +1314,16 @@ html {
   padding-top: 38px;
 }
 
+.catalog-products::after {
+  content: "";
+  position: absolute;
+  width: 1170px;
+  height: 1px;
+  background-color: rgba(252, 252, 252, 0.3);
+  top: 1px;
+  left: 1px;
+}
+
 .page-inner {
   display: flex;
   flex-direction: column;
@@ -1530,9 +1542,9 @@ html {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 20px;
-
   border-radius: 20px;
   background-color: rgba(252, 252, 252, 0.3);
+  border: transparent;
   padding-left: 14px;
   color: #2D3440;
   -webkit-appearance: none;
@@ -1765,7 +1777,7 @@ height: 0px;
   height: 4px;
   background-color: #565C66;
   border-radius: 2px;
-  top: -1px;
+  top: -2px;
   left: 25px;
   width: 78px;
 }
@@ -2094,7 +2106,7 @@ top: 40px;
 }
 
 .popup-catalog {
-  right: -48px;
+  right: -46px;
   top: 45px;
   width: 138px;
 
@@ -2289,6 +2301,8 @@ top: 40px;
 
 }
 
+
+
 .button-cart-item-remove {
   margin-left: auto;
 }
@@ -2302,7 +2316,25 @@ top: 40px;
   top: 50%;
   transform: translateY(-50%);
   left: 92%;
+  display: none;
+  opacity: 0.5;
+
 }
+
+
+
+.popup-input:focus + .button-search-delete {
+  display: block;
+}
+
+.popup-button-remove:hover {
+  cursor: pointer;
+}
+
+.button-search-delete:hover {
+  opacity: 1.0;
+}
+
 
 .popup-product-title {
   margin: 0;
@@ -2385,7 +2417,7 @@ margin-left: auto;
 }
 
 .text-input:hover {
-  border-color: #2D3440;
+  outline-color: #2D3440;
   cursor: auto;
 }
 
@@ -2394,7 +2426,7 @@ margin-left: auto;
 }
 
 .text-input:focus {
-  border: 2px solid #2D3440;
+  outline: 2px solid #2D3440;
 }
 
 .text-input:disabled {
@@ -2439,7 +2471,7 @@ border: 1px solid #B9B9B9;
 .select-control:focus {
   background-color: rgba(252, 252, 252, 0.4);
   cursor: auto;
-  border: 2px solid #FCFCFC;
+  outline: 2px solid #FCFCFC;
 }
 
 .select-control:focus.select-control:hover {
