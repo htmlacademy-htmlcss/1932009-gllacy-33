@@ -952,7 +952,7 @@ html {
 /*---------------------Статья в блоге и оформление подписки----------------------*/
 .blog {
   background-image: url(../pictures/index/article-background.jpg);
-
+  background-color: #FCFCFC;
   width: 570px;
   border-radius: 16px;
 }
@@ -1035,7 +1035,8 @@ html {
   outline: none;
   padding: 13px 16px;
   padding-right: 15px;
-  border: 1px solid #B9B9B9;
+  outline: 1px solid #B9B9B9;
+  border: none;
   border-radius: 4px;
   background-color: #FFFFFF;
   font-family: "Inter", sans-serif;
@@ -2385,7 +2386,7 @@ margin-left: auto;
 }
 
 .text-input:hover {
-  border-color: #2D3440;
+  outline-color: #2D3440;
   cursor: auto;
 }
 
@@ -2394,7 +2395,7 @@ margin-left: auto;
 }
 
 .text-input:focus {
-  border: 2px solid #2D3440;
+  outline: 2px solid #2D3440;
 }
 
 .text-input:disabled {
