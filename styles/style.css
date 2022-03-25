@@ -800,33 +800,6 @@ html {
   position: relative;
 }
 
-.products-button:hover {
-  cursor: pointer;
-  background-color: #FCFCFC;
-  outline: solid 2px #FF2F64;
-}
-
-.products-button:focus {
-  outline: solid 2px #2D3440;
-}
-
-.products-button:focus.products-button:hover {
-  cursor: pointer;
-  background-color: #FCFCFC;
-  outline: solid 2px #FF2F64;
-}
-
-.products-button:focus.products-button:active {
-  background-color: #B9B9B9;
-  outline: none;
-}
-
-.products-button:active {
-  background-color: #B9B9B9;
-  outline: none;
-
-}
-
 .products-button-svg {
   fill: #FCFCFC;
   position: absolute;
@@ -835,22 +808,28 @@ html {
   left: 50%;
 }
 
+.products-button:hover:not(.products-button:disabled) {
+  cursor: pointer;
+  background-color: #FCFCFC;
+  outline: 2px solid #FF2F64;
+}
+
 .products-button:hover .products-button-svg {
   fill: #2D3440;
 }
 
-/* .products-button:focus .products-button-svg {
-  fill: #2D3440;
-} */
-
-.products-button:active .products-button-svg {
-  fill: #565C66;
+.products-button:focus {
+  outline: solid 2px #2D3440;
 }
 
-/* .products-button::hover .products-button-svg {
-  fill: #2D3440;
-} */
+.products-button:disabled {
+  background-color: #B9B9B9;
 
+}
+
+.products-button:disabled .products-button-svg {
+  fill: #565C66;
+}
 
 .products-list {
   margin: 0;
@@ -1389,14 +1368,56 @@ html {
 }
 
 .pagination-link {
-  text-decoration: #2D3440 none;
+  text-decoration: none;
+  display: block;
+  width: 24px;
+  height: 24px;
   color: #2D3440;
+  border-radius: 50%;
+
+}
+
+.pagination-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 .pagination-link-current {
   background-color: #FCFCFC;
-  border-radius: 50px;
-  padding: 2px 8px;
+
 }
+
+.catalog-pagination-arrow-disable {
+  fill: rgba(45, 52, 64, 0.5);
+  cursor: default;
+}
+
+.catalog-pagination-arrow-rotate {
+  transform: rotate(180deg);
+}
+
+.pagination-link:hover:not(.pagination-link-current) {
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 1px solid #FCFCFC;
+
+}
+.pagination-link:hover.pagination-link-current {
+  cursor: default;
+}
+
+.pagination-link:focus:not(.pagination-link-current) {
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 1px solid #2D3440;
+
+}
+
+.pagination-link:focus.pagination-link-current {
+  outline: none;
+}
+
+
 
         /* catalog-header */
 /*--------------Хлебные крошки-----------------------------*/
@@ -1581,9 +1602,22 @@ html {
 
 }
 
+
+
 .control-input[type="checkbox"]:checked + .control-mark-2::before {
   content: none;
 }
+
+.control-input[type="checkbox"]:checked:hover + .control-mark-2 {
+  background-image: url(../pictures/catalog/check-filler-white.svg);
+  border: none;
+}
+
+.control-input[type="checkbox"]:hover + .control-mark-2 {
+  border: 1.33333px solid #FCFCFC;
+}
+
+
 
 
 /* Пагинация каталога */
@@ -1603,6 +1637,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-self: center;
+  align-items: center;
 }
 
 .pagination {
@@ -1613,6 +1648,9 @@ html {
   width: 130px;
 }
 
+.pagination-item {
+  position: relative;
+}
 
 
 /* всякий стайлинг */
@@ -1657,6 +1695,26 @@ height: 0px;
 }
 
 .range-toggle:hover .white-circle-slider {
+  background-color: #242424;
+}
+
+
+
+.range-toggle:focus {
+  outline: 2px solid #2D3440;
+  background-color: #FCFCFC;
+}
+
+.range-toggle:focus .white-circle-slider {
+  background-color: #242424;
+}
+
+.range-toggle:active {
+  background-color: #242424;
+  outline: none;
+}
+
+.range-toggle:active .white-circle-slider {
   background-color: #242424;
 }
 
@@ -2166,7 +2224,7 @@ margin-left: auto;
 
 .text-input:hover {
   border-color: #2D3440;
-  cursor: pointer;
+  cursor: auto;
 }
 
 .text-input:hover.text-input:focus {
@@ -2257,7 +2315,7 @@ box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   color: #FCFCFC;
 }
 
-.button-red:disabled, .button-red:disabled.button-red:focus, .button-red:disabled.button-red:hover  {
+.button-red:disabled {
   background-color: #B9B9B9;
 outline: 4px solid rgba(185, 185, 185, 0.3);
 color: #565C66;
