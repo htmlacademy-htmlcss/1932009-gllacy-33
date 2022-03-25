@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Мороженое от «Глейси»</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body class="page page-rosy">
@@ -21,9 +22,39 @@
       <!--Основная навигация(left)-->
       <ul class="navigation-list navigation-left">
         <li class="navigation-item">
-          <a href="catalog.html" class="navigation-link">
+          <button href="catalog.html" class="navigation-button navigation-link navigation-left-button">
             Каталог
-          </a>
+          </button>
+          <div class="popup popup-catalog popup-catalog-hide">
+            <h2 class="visually-hidden">Меню каталога на главной странице.</h2>
+            <ul class="popup-catalog-list">
+              <li class="popup-catalog-item">
+                <a class="popup-catalog-link popup-catalog-link-1" href="#">
+                  Новинки
+                </a>
+              </li>
+              <li class="popup-catalog-item">
+                <a class="popup-catalog-link" href="#">
+                  Сливочное
+                </a>
+              </li>
+              <li class="popup-catalog-item">
+                <a class="popup-catalog-link" href="#">
+                  Щербеты
+                </a>
+              </li>
+              <li class="popup-catalog-item">
+                <a class="popup-catalog-link" href="#">
+                  Фруктовый лед
+                </a>
+              </li>
+              <li class="popup-catalog-item">
+                <a class="popup-catalog-link" href="#">
+                  Мелорин
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="navigation-item">
           <a href="#" class="navigation-link">
@@ -193,26 +224,26 @@
           <ul class="social-list">
             <li class="social-item">
               <a href="https://vk.com/htmlacademy" class="social-link social-link-1">
-                <span class="visually-hidden">Вконтакте</span>
+                <span class="blackbox visually-hidden">Вконтакте</span>
               </a>
-              <div class="blackbox"></div>
+
             </li>
             <li class="social-item">
 
               <a href="https://www.facebook.com/htmlacademy" class="social-link social-link-2">
 
 
-                <span class="visually-hidden">Facebook</span>
+                <span class="blackbox visually-hidden">Facebook</span>
               </a>
-              <div class="blackbox"></div>
+
             </li>
             <li class="social-item">
               <a href="https://www.instagram.com/htmlacademy/" class="social-link social-link-3">
 
 
-                <span class="visually-hidden">Instagram</span>
+                <span class="blackbox visually-hidden">Instagram</span>
               </a>
-              <div class="blackbox"></div>
+
             </li>
           </ul>
         </footer>
