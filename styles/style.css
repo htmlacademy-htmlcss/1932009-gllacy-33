@@ -633,11 +633,6 @@ html {
   column-gap: 16px;
 }
 
-.social-item {
-  position: relative;
-
-}
-
 .social-link {
   width: 24px;
   height: 24px;
@@ -647,21 +642,9 @@ html {
   border: none;
   z-index: 1;
   position: relative;
-
-
 }
 
-.social-link-1 {
-  background-image: url(../pictures/link-vk.svg);
-}
 
-.social-link-2 {
-  background-image: url(../pictures/link-facebook.svg);
-}
-
-.social-link-3 {
-  background-image: url(../pictures/link-instagram.svg);
-}
 
 .social-link::before {
   content: "";
@@ -672,17 +655,18 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #242424;
+  display: block;
+  z-index: -1;
   display: none;
 
 }
 
-.social-link:hover + .blackbox::before,
-.social-link:focus + .blackbox::before {
+.social-link:hover::before,
+.social-link:focus::before {
   display: block;
-
-
-
 }
+
+
 
 
 
