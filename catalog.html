@@ -95,7 +95,7 @@
                 </div>
                 </div>
                   <span class="popup-product-price">480 ₽</span>
-                  <button class="popup-button-remove">
+                  <button class="popup-button-remove button-cart-item-remove">
 
                     <span class="visually-hidden">Удалить из корзины</span>
                   </button>
@@ -167,7 +167,7 @@
                 <label class="catalog-filter-label">
                   <input class="range-input range-input-min" type="number" value="100" name="min-price"> ₽
                 </label>
-                <div>-</div>
+                <div>–</div>
                 <label class="catalog-filter-label">
                   <input class="range-input range-input-max" type="number" value="500" name="max-price"> ₽
                 </label>
@@ -233,7 +233,8 @@
               </li>
             </ul>
           </fieldset>
-
+<!--Для проверяющего: в этом блоке чекбоксов несовпадение с макетом по горизонтальной оси потомучто в макете после "сахарные посыпки"
+стоит 24px, а везде 16px поэтому не стал исправлять несоответствие с пиксель перфект-->
           <fieldset class="catalog-filter-group">
             <legend class="filter-item-title">Наполнители:</legend>
             <ul class="catalog-filter-list">
@@ -281,7 +282,7 @@
           </fieldset>
           <button type="submit" class="button button-apply">Применить</button>
         </form>
-        <ul class="products-list">
+        <ul class="products-list products-list-catalog">
           <li class="products-item">
             <img src="pictures/products-1.jpg" width="168" height="168" alt="Малиновое мороженое" class="products-pic">
             <h3 class="products-item-title">Малинка</h3>
@@ -718,6 +719,7 @@
   <!-----------------------------------Футер---------------------------------------->
   <footer class="page-footer">
     <!------------------------------Ссылки на соц. сети--------------------------->
+
     <ul class="social-list social-list-footer">
       <li class="social-item">
         <a href="https://vk.com/htmlacademy" class="social-link social-link-1">
@@ -753,6 +755,9 @@
     <!---------------------------------------------------------------------------->
 
 
+
+    <!-----------------------------Полезная информация---------------------------->
+
     <ul class="information">
       <li class="information-item">
         <a class="information-item-link information-item-link-lovly" href="#">
@@ -761,13 +766,13 @@
 
       <li class="information-item">
         <a class="information-item-link information-item-link-1" href="#">
-          О производстве
+          Наши документы
         </a>
       </li>
 
       <li class="information-item">
         <a class="information-item-link" href="#">
-          Наши документы
+          О производстве
         </a>
       </li>
 
@@ -784,7 +789,7 @@
     <!-------------------------made in HTML Academy------------------------------->
     <div class="made-in-academy-container">
       <a class="academy-logo" href="https://htmlacademy.ru">
-        <img src="pictures/footer/academy-logo.svg" width="93" height="27" alt="Логотип htmlacademy">
+        <img src="pictures/footer/academy-logo.svg" width="93" height="27" class="footer-img" alt="Логотип htmlacademy">
       </a>
       <p class="academy-text">
         Сделано в
