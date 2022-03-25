@@ -1823,6 +1823,7 @@ height: 0px;
 
 
 .white-circle-slider {
+  display: block;
   background-color: #FCFCFC;
   width: 4px;
   height: 4px;
